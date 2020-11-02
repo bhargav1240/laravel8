@@ -2,8 +2,14 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-Vue.component('home-component', require('./components/Home.vue').default);
+import VueRouter from 'vue-router';
+import routes from './routes';
 
-new Vue({
-    el:"#app"
+Vue.use(VueRouter);
+
+// Vue.component('home-component', require('./components/Home.vue').default);
+
+const app = new Vue({
+    el:"#app",
+    router: new VueRouter(routes)
 });

@@ -1,6 +1,6 @@
 <template>
-    <div class="text-yellow-700">
-        Home Component
+    <div class="text-green-700">
+        About Component
     </div>
 </template>
 <script>
